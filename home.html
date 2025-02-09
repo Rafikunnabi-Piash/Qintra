@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qintra E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background: #004d40;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+        }
+        .sidebar h2 {
+            text-align: center;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px 0;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        .top-bar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .top-bar input {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .product-section {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background: #008c7a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #007063;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Qintra</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Saved</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Selling</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Purchase History</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </div>
+    
+    <div class="main-content">
+        <div class="top-bar">
+            <input type="text" placeholder="Search Product">
+        </div>
+        
+        <div class="product-section">
+            <h2>Men’s Formal Shoe</h2>
+            <p>Price: $149.95</p>
+            <button>Add to cart</button>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>
